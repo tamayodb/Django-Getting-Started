@@ -9,5 +9,6 @@
         <p> Phone: {{ details.phone }}</p>
         <p> Member since: {{ details.joined_date }}</p>
 
-        <p>Back to <a href="/members">Members</a></p>
+        <p>Back to <a href="{% url 'members' %}"> All Members</a>
+</p>
 {% endblock %}  
