@@ -22,3 +22,10 @@ def details (request, id):
 def main(request):
   template = loader.get_template('main.html')
   return HttpResponse(template.render())
+
+def testing(request):
+   template = loader.get_template('template.html')
+   context = {
+      'test_members': ['Adam Sandler', 'Jacob Hills', 'Erwin Heusaff']
+   }
+   return HttpResponse(template.render(context, request))
