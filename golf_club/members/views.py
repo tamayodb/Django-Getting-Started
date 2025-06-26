@@ -26,6 +26,6 @@ def main(request):
 def testing(request):
    template = loader.get_template('template.html')
    context = {
-      'test_members': ['Adam Sandler', 'Jacob Hills', 'Erwin Heusaff']
+      'basic_details': {'firstname': 'Samantha', 'phone': '6398237462537', 'joined_date': '26-05-2025'}
    }
    return HttpResponse(template.render(context, request))

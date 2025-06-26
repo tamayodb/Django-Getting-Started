@@ -2,10 +2,22 @@
 <html>
     <title> This is a test</title>
     <body> 
-        {% for x in test_members %}
-         <h1> {{ x }}</h1>
-        {% endfor %}
-
         <p> In views.py you can see what the test_members variable looks like.</p>
+
+        <h1> Welcome, {{ basic_details.firstname }} !</h1>
+
+        {% with account_num="384758" %}
+        <h2> Your account number is {{ account_num }}</h2>
+        {% endwith %}
+
+       <h2>Basic Details</h2>
+
+        <ul>
+            <li>Phone: {{ basic_details.phone }}</li>
+            <li>Joined Date: {{ basic_details.joined_date }}</li>
+        </ul>
+
     </body>
+    
+    {% include 'footer.html' %}
 </html> 
