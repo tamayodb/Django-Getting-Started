@@ -24,8 +24,10 @@ def main(request):
   return HttpResponse(template.render())
 
 def testing(request):
+   dummy_data = Members.objects.all()
    template = loader.get_template('template.html')
    context = {
-      'basic_details': {'firstname': 'Samantha', 'phone': '6398237462537', 'joined_date': '26-05-2025'}
+      'basic_details': {'firstname': 'Samantha', 'phone': '6398237462537', 'joined_date': '26-05-2025'},
+      'dummy_data': dummy_data,
    }
    return HttpResponse(template.render(context, request))
