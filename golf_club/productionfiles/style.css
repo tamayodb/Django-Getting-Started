@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.64px;
+  color: #585d74;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.topnav {
+  background-color: #375BDC;
+  padding: 15px 30px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.topnav a:hover,
+.topnav a:active {
+  text-decoration: underline;
+  color: #DCE3FF;
+}
+
+/* Card Container */
+.mycard {
+  background-color: #ffffff;
+  margin: 50px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mycard-header {
+  background-image: linear-gradient(to bottom, #375BDC, #4D70EF);
+  padding: 40px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mycard h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.mycard-content {
+  padding: 25px;
+}
+
+/* List Styling */
+ul {
+  list-style-type: none;
+}
+
+li {
+  background-color: #ffffff;
+  border-left: 10px solid #375BDC;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(51, 51, 51, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(51, 51, 51, 0.2);
+}
+
+/* Link Styles */
+a:link,
+a:visited {
+  color: #375BDC;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+.main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main h1 {
+  font-size: 28px;
+  color: #375BDC;
+  margin-bottom: 20px;
+}

@@ -1,16 +1,20 @@
 {% extends "master.html" %}
 
 {% block title %}
-    Golf Club - List of all members
+    Golf Club - List of All Members
 {% endblock %}
 
 {% block content %}
-
-    <p><a href="/">Home</a></p>
-    <h1>Members</h1>
+    <div class="mycard">
+        <h1>Members</h1>
         <ul> 
             {% for x in members %}
-               <li><a href="{% url 'details' x.id %}">{{ x.firstname }} {{ x.lastname }}</a></li>
-            {% endfor %}    
+                <li>
+                    <a href="{% url 'details' x.id %}">
+                        {{ x.firstname }} {{ x.lastname }}
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
-{% endblock %}        
+    </div>
+{% endblock %}
